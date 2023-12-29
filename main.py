@@ -1,10 +1,11 @@
 import requests
 import time
-import json
 import os
 
 authToken = input("Auth token here (Include Bearer): ")
 serverId = input("Server id here: ")
+profileId = input("Profile id here: ")
+sessionId = input("Session id here: ")
 
 requestHeaders = {
     "Host": "api.minehut.com",
@@ -13,8 +14,8 @@ requestHeaders = {
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
     "Authorization": authToken,
-    "x-profile-id": "55f48f07-cca8-4c7a-8059-a6be2d5da42b",
-    "x-session-id": "37516091-b08f-4b69-93c2-b562afa7d65f",
+    "x-profile-id": profileId,
+    "x-session-id": sessionId,
     "Origin": "https://app.minehut.com",
     "DNT": "1,",
     "Connection": "keep-alive",
